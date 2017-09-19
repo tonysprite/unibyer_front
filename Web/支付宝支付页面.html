@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta charset="GBK">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>支付宝支付页面</title>
+	<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+	<link href="../Public/css/pay.css" type="text/css" rel="stylesheet"/>
+	</head>
+<body>
+<!--header start-->
+<div class="header">
+	<div class="header_div">
+		<span class="wecome header_item">送至：
+		<select name="header_province">
+			<option value="北京">北京</option>
+		</select>
+		</span>
+		<span class="header_item logout">haha&nbsp<a href="#">退出</a></span>
+		<span class="header_item">|</span>
+		<a class="header_item">我的订单</a>
+		<a class="header_item">我的优尼拜尔</a>
+		<span class="header_item">购物车<a href="#">0</a>件</span>
+		<span class="header_item">|</span>
+		<a class="header_item">会员俱乐部</a>
+		<a class="header_item header_item_special">客户服务/服务中心</a><span>|&nbsp;</span><a>客户服务/服务中心</a>
+		<a class="header_item">关注优尼拜尔</a>
+		<a class="header_item">网站导航</a>
+	</div>
+</div>
+<!--header end-->
+<!--content start-->
+<div class="container">
+	<div class="logo_div">
+		<div class="logo_div_left">
+			<div class="logo_img">
+				<img src="../Public/image/1.log.jpg" />
+			</div>
+		</div>
+		<div id="sflex04" class="stepflex ">
+			<dl class="first done">
+				<dt class="s-num">1</dt>
+				<dd class="s-text">我的购物车</dd>
+				<dd></dd>
+			</dl>
+			<dl class="normal doing">
+				<dt class="s-num">2</dt>
+				<dd class="s-text">填写核对订单信息</dd>
+			</dl>
+			<dl class="last">
+				<dt class="s-num">3</dt>
+				<dd class="s-text">成功提交订单<s></s><b></b></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="content_title">
+		填写并核对订单信息    |    <span class="content_title_msg">请在<font>15分44秒</font>内提交订单，下单后你另有 30 分钟的支付时间。
+	</div>
+	<div class="content_banner">
+		<span class="contain_banner_span">收货信息</span>
+	</div>
+	<div class="address_info">
+		<div class="default_address" onclick="window.location.href='./地址编辑.html'">
+			<div class="user_name">
+				张某
+			</div>
+			<div class="default_address_title">
+				默认地址
+			</div>
+			<div class="default_mobile">186****1234</div>
+			<div class="default_mobile">北京市大兴区 亦庄经开大厦</div>
+		</div>
+		<div class="add_address" onclick="window.location.href='./地址新增.html'">
+			<div class="add_address_logo"><img src="../Public/image/add_address_button.png"/></div>
+			<div class="add_address_title"><a href="#">添加地址</a></div>
+		</div>
+	</div> 
+	
+	<div class="content_banner content_item">
+		<span class="contain_banner_span">收货时间</span>
+	</div>
+	<div class="address_info">
+		<table class="recievor_time">
+			<tr>
+				<td width="">
+					<input type="radio" name="recieve_time_radio"/>
+					<span class="recieve_time_span_1">周一至周五</span>
+				</td>
+				<td width="">
+					<span class="recieve_time_span_2">收货地址为公司/学校，以及周末无人收货时，推荐选择。</span>
+				</td>
+			</tr>
+			<tr>
+				<td width="">
+					<input type="radio" name="recieve_time_radio" checked=checked />
+					<span class="recieve_time_span_1">周一至周日均可</span>
+				</td>
+				<td width="">
+					<span class="recieve_time_span_2">我们会尽快送达。若错过送货，请与快递小哥另约送货时间哦。</span>
+				</td>
+			</tr>
+			<tr>
+				<td width="">
+					<input type="radio" name="recieve_time_radio"/>
+					<span class="recieve_time_span_1">周六日、节假日</span>
+				</td>
+				<td width="">
+					<span class="recieve_time_span_2">收货地址为家庭地址时，推荐选择。</span>
+				</td>
+			</tr>
+		</table>
+	</div> 
+	
+	<div class="content_banner content_item">
+		<span class="contain_banner_span">支付方式	 *推荐使用在线支付，更方便快捷</span>
+	</div>
+	<div class="address_info pay_info">
+		<div class="recievor_time">
+			<div class="use_coupon">
+				<input type="checkbox" name="check_use_coupon"/>
+				<span class="check_use_coupon_msg_one">
+					使用优惠券      (您有0个)
+				</span>
+				<i></i>
+			</div>
+			<div class="use_coupon">
+				<span class="check_use_coupon_msg">
+					你还需支付179元，请选择：
+				</span>
+			</div>
+			<div class="pay_detail">
+				<div class="pay_type">
+					<input type="radio" name="pay_online" value=0 checked=checked />
+					<span class="pay_type_title">在线支付</span>
+					<span class="pay_type_tips">
+						支持绝大多数银行卡、微信支付等，可以提交订单后选择。
+					</span>
+				</div>
+				<div class="pay_type_list">
+					<span class="pay_type_tips left">
+						包括：
+					</span>
+					<img src="../Public/image/pay_type_list.jpg"/>
+					<span class="pay_type_tips">
+						支付方式
+					</span>
+				</div>
+			</div>
+			
+			<div class="pay_detail pay_to_door">
+				<div class="pay_type">
+					<input type="radio" name="pay_online" value=1 />
+					<span class="pay_type_title">货到付款</span>
+					<span class="pay_type_tips">送货上门后再付款。</span>
+				</div>			
+			</div>
+		</div>
+	</div> 
+	
+	<div class="content_banner content_item">
+		<span class="contain_banner_span">订单商品住处</span>
+		<a herf="#" class="contain_banner_right_span"><< 返回购物车修改商品<a>
+	</div>
+	<div class="order_detail underline">
+		<span class="sending_order">发货订单</span>
+		<span class="pay_type_tips">
+					&nbsp;&nbsp;&nbsp;&nbsp;预计送达：12月24日 前
+		</span>
+		
+		<span class="per_num">数量</span>
+		<span class="per_num">单价</span>
+	</div>
+	<div class="order_detail underline top_line order_goods_detail_one">
+		<span class="sending_order">&nbsp</span>
+		<img src="../Public/image/pay_goods_img.jpg"/>
+		<span class="pay_type_tips">					
+					冰洁BENGEN羽绒男女混合专场-冰洁 女款时尚简约灰卡其色长款
+		</span>
+		<span class="per_num">1</span>
+		<span class="per_num">￥219</span>
+		<span class="per_num">尺码：73</span>
+			
+	</div>
+	
+	<div class="order_detail top_line">				
+		<span class="per_num">李订单金额：￥179</span>
+		<span class="per_num">已享受优惠：-￥50 </span>
+		<span class="per_num">运费：￥10 </span>			
+	</div>
+	
+	<div class="content_banner pay_div">
+		<div class="content_pay_div_inner">
+			<div class="left_pay_div">
+				<div class="address_info_show">
+					<span class="address_info_title">收货信息：	</span>
+					<span class="address_info_content">XXX.186*****763.北京市 大兴区 亦庄地区 荣京丽都A座12
+				周一到周日均可</span>
+				</div>
+				<div class="address_info_show underline">
+					<span class="address_info_title">支付方式：	</span>
+					<span class="address_info_content">在线支付</span>
+				</div>
+				<div class="address_info_show top_line">
+					<span class="address_info_title">其他信息：	</span>
+					<span class="address_info_content">发票</span>
+					<img src="../Public/image/question.png" />
+				</div>
+				<div class="address_info_show address_info_show_end">
+					<span class="content_title_msg">
+						请在<font>15分44秒</font>内提交订单，下单后你另有 30 分钟的支付时间。
+						<img src="../Public/image/question.png" />
+					</span>
+					
+				</div>
+			</div>
+			<div class="right_pay_div">
+				<div class="address_info_show">
+					<span class="address_info_title">商品金额：	</span>
+					<span class="address_info_content">￥219</span>
+				</div>
+				<div class="address_info_show">
+					<span class="address_info_title">运费：	</span>
+					<span class="address_info_content">￥10</span>
+				</div>
+				<div class="address_info_show underline">
+					<span class="address_info_title">活动优惠：	</span>
+					<span class="address_info_content"> -￥50</span>
+				</div>
+				<div class="address_info_show top_line pay_money_tips">
+					<span class="address_info_title">待支付：	</span>
+					<span class="address_info_content"> ￥179</span>
+				</div>
+				<div class="address_info_show">
+					<input type="button" class="pay_button" value="提交订单"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--content end-->
+		<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/swiper.jquery.min.js"></script>
+		<script>
+			$(".plus_num").on("click",function(){
+				var num=$(this).prev("input").val();
+				if(!num){
+					num=0;
+				}
+				num++;
+				console.log(num)
+				$(this).prev("input").val(num);			
+			});
+			$(".reduce_num").on("click",function(){
+				var num=$(this).next("input").val();
+				if(!num){
+					num=0;
+				}
+				num--;
+				if(num<=0){
+					num=0;
+				}
+				console.log(num)
+				$(this).next("input").val(num);			
+			});
+			$("input[name=all]").on('click',function(){
+				var checkedAll=$("input[name=all]:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".select_all").on('click',function(){
+				var checkedAll=$(".select_all:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".favorite_tags span").on("click",function(){
+				$(".favorite_tags span").removeClass("selected_tag");
+				$(this).addClass("selected_tag");
+			});
+
+		var swiper = new Swiper('.swiper-container', {
+			zoom: true,
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		});
+		
+		function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+		 if(i<10) 
+		 { 
+		  i = "0" + i; 
+		 } 
+		 return i; 
+		} 
+		function leftTimer(year,month,day,hour,minute,second){ 
+		 var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数 
+		 var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+		 var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 
+		 var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+		 var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 
+		 days = checkTime(days); 
+		 hours = checkTime(hours); 
+		 minutes = checkTime(minutes); 
+		 seconds = checkTime(seconds); 
+		 setInterval("leftTimer("+year+","+month+","+day+","+hour+","+minute+","+second+")",1000); 
+		 if(days!='00'){
+			var html = days+"天" + hours+"小时" + minutes+"分"+seconds+"秒"; 
+		 }else{
+			if(hours!='00'){
+				var html =hours+"小时" + minutes+"分"+seconds+"秒"; 
+			}else{
+				if(minutes!='00'){
+					var html =minutes+"分"+seconds+"秒"; 
+				}else{
+					var html =seconds+"秒"; 
+				}
+			}
+		 }
+		 $(".content_title_msg font").html(html);
+		} 
+
+		leftTimer(2017,8,21,1,1,52);
+		
+		</script>
+	</body>
+</html>

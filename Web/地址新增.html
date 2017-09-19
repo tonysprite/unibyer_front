@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta charset="GBK">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>购物车-选取登录</title>
+	<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+	<link href="../Public/css/car-select-login.css" type="text/css" rel="stylesheet"/>
+	</head>
+<body>
+<!--header start-->
+<div class="header">
+	<div class="header_div">
+		<span class="wecome header_item">送至：
+		<select name="header_province">
+			<option value="北京">北京</option>
+		</select>
+		</span>
+		<span class="header_item logout">haha&nbsp<a href="#">退出</a></span>
+		<span class="header_item">|</span>
+		<a class="header_item">我的订单</a>
+		<a class="header_item">我的优尼拜尔</a>
+		<span class="header_item">购物车<a href="#">0</a>件</span>
+		<span class="header_item">|</span>
+		<a class="header_item">会员俱乐部</a>
+		<a class="header_item header_item_special">客户服务/服务中心</a><span>|&nbsp;</span><a>客户服务/服务中心</a>
+		<a class="header_item">关注优尼拜尔</a>
+		<a class="header_item">网站导航</a>
+	</div>
+</div>
+<!--header end-->
+<!--content start-->
+<div class="container">
+	<div class="logo_div">
+		<div class="logo_div_left">
+			<div class="logo_img">
+				<img src="../Public/image/1.log.jpg" />
+			</div>
+		</div>
+	</div>
+	<div class="form_div">
+		<div class="form_inner">
+			<div class="form_title">
+				<span class="form_title_span">新增收货人信息</span>
+				<span class="form_title_close" onclick="void(0)">x</span>
+			</div>
+			<div class="form_content">
+				<div class="form-item">
+					<label><i>&nbsp;</i>收货人:&nbsp;&nbsp;&nbsp;</label>
+					<input type="text" class="form-input" name="receivor" />
+				</div>
+				<div class="form-item form-normal-item">
+					<label><i>&nbsp;</i>所在地区:</label>
+					<select name="province" class="province">
+						<option value="">请选择</option>
+					</select>
+					<select name="city" class="province">
+						<option value="">请选择</option>
+					</select>
+					<select name="area" class="province">
+						<option value="">请选择</option>
+					</select>
+				</div>
+				<div class="form-item form-normal-item">
+					<label><i>&nbsp;</i>详细地址:</label>
+					<input type="text" class="form-input" name="address" />
+				</div>
+				<div class="form-item form-normal-item">
+					<label><i>&nbsp;</i>手机号码:</label>
+					<input type="text" class="form-input" name="mobile" />
+					<label>固定电话:</label>
+					<input type="text" class="form-input" name="tel" />
+				</div>
+				<div class="form-item form-submit-item">
+					<input type="button" class="form-submit-button" name="doSubmit" value="保存收货人信息" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--content end-->
+		<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/swiper.jquery.min.js"></script>
+		<script>
+			$(".plus_num").on("click",function(){
+				var num=$(this).prev("input").val();
+				if(!num){
+					num=0;
+				}
+				num++;
+				console.log(num)
+				$(this).prev("input").val(num);			
+			});
+			$(".reduce_num").on("click",function(){
+				var num=$(this).next("input").val();
+				if(!num){
+					num=0;
+				}
+				num--;
+				if(num<=0){
+					num=0;
+				}
+				console.log(num)
+				$(this).next("input").val(num);			
+			});
+			$("input[name=all]").on('click',function(){
+				var checkedAll=$("input[name=all]:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".select_all").on('click',function(){
+				var checkedAll=$(".select_all:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".favorite_tags span").on("click",function(){
+				$(".favorite_tags span").removeClass("selected_tag");
+				$(this).addClass("selected_tag");
+			});
+
+		var swiper = new Swiper('.swiper-container', {
+			zoom: true,
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		});
+		</script>
+	</body>
+</html>

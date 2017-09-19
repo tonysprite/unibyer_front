@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta charset="GBK">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>购物车-选取登录</title>
+	<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+	<link href="../Public/css/car-select-login.css" type="text/css" rel="stylesheet"/>
+	</head>
+<body>
+<!--header start-->
+<div class="header">
+	<div class="header_div">
+		<span class="wecome header_item">送至：
+		<select name="header_province">
+			<option value="北京">北京</option>
+		</select>
+		</span>
+		<span class="header_item logout">haha&nbsp<a href="#">退出</a></span>
+		<span class="header_item">|</span>
+		<a class="header_item">我的订单</a>
+		<a class="header_item">我的优尼拜尔</a>
+		<span class="header_item">购物车<a href="#">0</a>件</span>
+		<span class="header_item">|</span>
+		<a class="header_item">会员俱乐部</a>
+		<a class="header_item header_item_special">客户服务/服务中心</a><span>|&nbsp;</span><a>客户服务/服务中心</a>
+		<a class="header_item">关注优尼拜尔</a>
+		<a class="header_item">网站导航</a>
+	</div>
+</div>
+<!--header end-->
+<!--content start-->
+<div class="container">
+	<div class="logo_div">
+		<div class="logo_div_left">
+			<div class="logo_img">
+				<img src="../Public/image/1.log.jpg" />
+			</div>
+			<div class="logo_title">
+				全部商品 0
+			</div>
+		</div>
+		<div class="logo_div_right">
+			<span class="logo_span_right">满200减30</span>
+			<span class="logo_span_right">血糖仪</span>
+			<span class="logo_span_right">并发症</span>
+			<span class="logo_span_right">蓝莓</span>
+			<span class="logo_span_right">普纳丹露</span>
+		</div>
+	</div>
+	
+	<div class="send_banner">
+		<span>配送至</span>
+		<select>
+			<option>
+				北京朝阳区五环到六环之间
+			</option>
+		</select>
+		
+	</div>
+	
+	<div class="gray_banner">
+		<div class="gray_banner_inner">
+			<div class="gray_banner_left">
+			<span class="check_box"><input type="checkbox" name="all" value=1 />全选</span>
+			<span class="goods_title">商品</span>
+			</div>
+			<div class="gray_banner_right">
+			<span class="periter">单位(元)</span>
+			<span class="number">数量</span>
+			<span class="small_count">小计(元)</span>
+			<span class="operation">操作</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="goods_list">
+		<div class="goods_item">
+			<div class="goods_msg underline">
+				<img src="../Public/image/exhange_buy.png"/>
+				<span class="goods_msg_1" onclick="window.location.href='#'">活动商品购满115.00元，即可加价换购商品1件</span>
+				<img class="right_angle" src="../Public/image/exhange_goods_angle_right.png"/>
+				<span class="red_button goods_msg_space1" onclick="window.location.href='#'">查看换购品</span>
+				<span class="goods_msg_2 goods_msg_space2" onclick="window.location.href='#'">去凑单</span>
+				<img class="right_angle" src="../Public/image/exhange_goods_angle_right.png"/>
+			</div>
+			<!--goods_detail start -->
+			<div class="goods_detail underline">
+				<input type="checkbox" name="goods_detail_checkbox"/>
+				<img src="../Public/image/shop_car_goods_1.jpg" class="goods_detail_img"/>
+				<span class="goods_detail_title">澳洲牛腩XXXXX</span>
+				<span class="guige">规格：500g</span>
+				<span class="goods_detail_free_price">
+					<ul>
+						<li>
+							269.00
+						</li>
+						<li>
+							<select name="freebie">
+								<option value="">促销优惠</option>
+							</select>
+						</li>
+					</ul>
+				</span>
+				<span class="num_select">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" class="reduce_num">-</a>
+							<input type="text" name="goods_number"/>
+							<a href="javascript:void(0);" class="plus_num">+</a>
+						</li>
+						<li  class="exists_goods"><span>有货</span></li>
+					</ul>
+				</span>
+				<span class="goods_detail_price">538.00</span>
+				<span class="goods_detail_operation">
+					<ul>
+						<li><a href="#">删除</a></li>
+						<li><a href="#" class="movetomycare">移到我的关注</a></li>
+					</ul>
+				</span>
+				<div class="free_prize">
+					<span>[赠品]XXXXXXXXXXXXXXXXX</span>
+				</div>
+				<div class="free_prize">
+					<span>[赠品]XXXXXXXXXXXXXXXXX</span>
+				</div>
+			</div>
+			<!--goods_detail end -->
+			<div class="goods_msg underline">
+				<img src="../Public/image/exhange_buy.png"/>
+				<span class="goods_msg_1" onclick="window.location.href='#'">活动商品购满115.00元，即可加价换购商品1件</span>
+				<img class="right_angle" src="../Public/image/exhange_goods_angle_right.png"/>
+				<span class="goods_msg_2 goods_msg_space2" onclick="window.location.href='#'">去凑单</span>
+				<img class="right_angle" src="../Public/image/exhange_goods_angle_right.png"/>
+			</div>
+			<!--goods_detail start -->
+			<div class="goods_detail underline">
+				<input type="checkbox" name="goods_detail_checkbox"/>
+				<img src="../Public/image/shop_car_goods_1.jpg" class="goods_detail_img"/>
+				<span class="goods_detail_title">澳洲牛腩XXXXX</span>
+				<span class="guige">规格：500g</span>
+				<span class="goods_detail_free_price">
+					<ul>
+						<li>
+							269.00
+						</li>
+						<li>
+							<select name="freebie">
+								<option value="">促销优惠</option>
+							</select>
+						</li>
+					</ul>
+				</span>
+				<span class="num_select">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" class="reduce_num">-</a>
+							<input type="text" name="goods_number"/>
+							<a href="javascript:void(0);" class="plus_num">+</a>
+						</li>
+						<li  class="exists_goods"><span>有货</span></li>
+					</ul>
+				</span>
+				<span class="goods_detail_price">538.00</span>
+				<span class="goods_detail_operation">
+					<ul>
+						<li><a href="#">删除</a></li>
+						<li><a href="#" class="movetomycare">移到我的关注</a></li>
+					</ul>
+				</span>
+			</div>
+			<!--goods_detail end -->	
+<!--goods_detail start -->
+			<div class="goods_detail underline">
+				<input type="checkbox" name="goods_detail_checkbox"/>
+				<img src="../Public/image/shop_car_goods_1.jpg" class="goods_detail_img"/>
+				<span class="goods_detail_title">澳洲牛腩XXXXX</span>
+				<span class="guige">规格：500g</span>
+				<span class="goods_detail_free_price">
+					<ul>
+						<li>
+							269.00
+						</li>
+						<li>
+							<select name="freebie">
+								<option value="">促销优惠</option>
+							</select>
+						</li>
+					</ul>
+				</span>
+				<span class="num_select">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" class="reduce_num">-</a>
+							<input type="text" name="goods_number"/>
+							<a href="javascript:void(0);" class="plus_num">+</a>
+						</li>
+						<li  class="exists_goods"><span>有货</span></li>
+					</ul>
+				</span>
+				<span class="goods_detail_price">538.00</span>
+				<span class="goods_detail_operation">
+					<ul>
+						<li><a href="#">删除</a></li>
+						<li><a href="#" class="movetomycare">移到我的关注</a></li>
+					</ul>
+				</span>
+			</div>
+			<!--goods_detail end -->				
+		</div>
+		<div class="goods_summary underline">
+			<div class="left">
+			<input type="checkbox" name="select_all" class="select_all" value=1 />
+			<span class="select_all_title">全选</span>
+			<a href="javascript:deleteAll();" class="deleteAll">删除选中的商品</a>
+			<a href="javascript:moveAllToMyCare();" class="moveAlltomycare">移到我的关注</a>
+			</div>
+			<div class="right">
+			<span class="selectedNum">已选择<font>2</font>件商品</span>
+			<span class="totalPrice">总价（不含运费）：<font>￥665.00</font></span>
+			<span class="saved">已节省：－￥123.00</span>
+			<input type="button" value="去结算" name="topay" class="topay" />
+			</div>
+		</div>
+		
+		<div class="favorite_list">
+			<div class="favorite_tags">
+				<span class="guess_your_favorite selected_tag">猜你喜欢</span>
+				<span class="things_i_care">我的关注</span>
+				<span class="my_red_bag">我的红包</span>
+			</div>
+			<div class="favorite_content">
+				<!-- Swiper start-->
+				<div class="swiper-container banner1">
+					<div class="swiper-wrapper" id="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+							<div class="swiper_list">
+								<a href="#">
+									<img src="../Public/image/shop_car_goods_2.jpg"> 
+							   </a>
+							   <div class="swiper_item_title">
+								罗氏血糖试纸血糖仪试纸家用活力型血糖仪器+50…  
+							   </div>
+							   <div class="swiper_item_price">
+								￥269.00
+							   </div>
+							   <input type="button" value="加入购物车"  class="swiper_item_button"/>
+						   </div>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination swiper-pagination-white"></div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<!--Swiper end-->
+			</div>
+		</div>
+	</div>
+</div>
+<!--content end-->
+		<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/swiper.jquery.min.js"></script>
+		<script>
+			$(".plus_num").on("click",function(){
+				var num=$(this).prev("input").val();
+				if(!num){
+					num=0;
+				}
+				num++;
+				console.log(num)
+				$(this).prev("input").val(num);			
+			});
+			$(".reduce_num").on("click",function(){
+				var num=$(this).next("input").val();
+				if(!num){
+					num=0;
+				}
+				num--;
+				if(num<=0){
+					num=0;
+				}
+				console.log(num)
+				$(this).next("input").val(num);			
+			});
+			$("input[name=all]").on('click',function(){
+				var checkedAll=$("input[name=all]:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".select_all").on('click',function(){
+				var checkedAll=$(".select_all:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".favorite_tags span").on("click",function(){
+				$(".favorite_tags span").removeClass("selected_tag");
+				$(this).addClass("selected_tag");
+			});
+
+		var swiper = new Swiper('.swiper-container', {
+			zoom: true,
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		});
+		</script>
+	</body>
+</html>

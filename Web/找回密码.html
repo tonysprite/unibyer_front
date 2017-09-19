@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>找回密码</title>
+<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+<link href="../Public/css/password_lookingback.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header">
+	<div class="title_left">
+		<a class="header_title" href="#">我们的故事</a>
+		<a class="header_title title2" href="#">UNIBALE商城</a>
+		<a class="header_title" href="#">用户评价</a>
+	</div>
+	<div class="title_right">
+		<a class="header_title " href="#">去哪买</a>
+		<a class="header_title" href="#">视频</a>
+		<a class="header_title" href="#">美文分享</a>
+	</div>
+</div>
+	<div class="container">
+		<div class="w">
+        <div class="mod-main mod-comm">
+            <div class="mt">
+                <h3>找回密码</h3>
+            </div>
+            <div class="mc">
+                <div id="sflex04" class="stepflex ">
+                    <dl class="first doing">
+                        <dt class="s-num">1</dt>
+                        <dd class="s-text">填写账户名<s></s><b></b></dd>
+                        <dd></dd>
+                    </dl>
+                    <dl class="normal">
+                        <dt class="s-num">2</dt>
+                        <dd class="s-text">验证身份<s></s><b></b></dd>
+                    </dl>
+                    <dl class="normal">
+                        <dt class="s-num">3</dt>
+                        <dd class="s-text">设置新密码<s></s><b></b></dd>
+                    </dl>
+                    <dl class="last">
+                        <dt class="s-num">&nbsp;</dt>
+                        <dd class="s-text">完成<s></s><b></b></dd>
+                    </dl>
+                </div>
+
+                <div class="form formno" style="width: 65%;margin-left: 30%;">
+                    <div class="item">
+                        <span class="label">账户名：</span>
+                        <div class="fl">
+                            <input type="text" class="itxt" tabindex="1" onfocus="usernameOnfocus();" onblur="usernameOnblur();" id="username" name="username" value="用户名/已验证手机">
+                            <div class="clr"></div>
+                            <label id="username_error" calss="" class="msg-error"><span class="f1 alertLogo">!</span>请输入您的用户名/已验证手机</label>
+                            <!-- <div class="msg-text">若该手机号无法接收验证短信，请拨打客服电话400-606-5500转7申诉更改验证手机</div> -->
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+					<div class="item">
+                            <span class="label">验证码：</span>
+                            <div class="fl">
+                                <input type="text" id="authCode" name="authCode" tabindex="2" onblur="authCodeBlur();" class="itxt">
+                                <label><img style="cursor:pointer;width:100px;height:26px;vertical-align: middle;" alt="验证码" onclick="verc('868301d1-941e-4614-b172-426c9163e6e4')" src="http://authcode.jd.com/verify/image?acid=868301d1-941e-4614-b172-426c9163e6e4&amp;srcid=usersafe&amp;_t=&lt;%=new Date().getTime() %&gt;" class="ml10" id="JD_Verification1">看不清？<a class="ftx-05" href="javascript:verc('868301d1-941e-4614-b172-426c9163e6e4');">换一张</a></label>
+                                <div class="clr"></div>
+                                <div class="msg-error" id="authCode_error"></div>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                    
+
+                    <div class="item">
+                        <span class="label">&nbsp;</span>
+                        <div class="fl">
+                            <a href="javascript:void(0);" class="btn-5" onclick="doIndex('868301d1-941e-4614-b172-426c9163e6e4');" id="findPwdSubmit">提交</a>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                    <input type="hidden" name="eid" id="eid" value="OOKLUNM3AI6V2QNTMWYZRFIUN3SJ7IFANSZHTNIWEKOE5R7G4T2AZT6SZDCSZQGKDKMLXAYWUZ75CPWUPN7ZLIVM6E" class="hide">
+                    <input type="hidden" name="fp" id="fp" value="20fe20219878f42cb9d39ddd445d04d3" class="hide">
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+<script src="../Public/js/jquery-1.12.3.min.js"></script>
+
+    <script>
+
+    </script>
+</body>
+</html>

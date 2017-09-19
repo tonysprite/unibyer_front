@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>找回密码-设置新密码</title>
+<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+<link href="../Public/css/password_lookingback-2.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header">
+	<div class="title_left">
+		<a class="header_title" href="#">我们的故事</a>
+		<a class="header_title title2" href="#">UNIBALE商城</a>
+		<a class="header_title" href="#">用户评价</a>
+	</div>
+	<div class="title_right">
+		<a class="header_title " href="#">去哪买</a>
+		<a class="header_title" href="#">视频</a>
+		<a class="header_title" href="#">美文分享</a>
+	</div>
+</div>
+	<div class="container">
+		<div class="w">
+        <div class="mod-main mod-comm">
+            <div class="mt">
+                <h3>找回密码</h3>
+            </div>
+            <div class="mc">
+                <div id="sflex04" class="stepflex ">
+                    <dl class="first done">
+                        <dt class="s-num">1</dt>
+                        <dd class="s-text">填写账户名</dd>
+                        <dd></dd>
+                    </dl>
+                    <dl class="normal done">
+                        <dt class="s-num">2</dt>
+                        <dd class="s-text">验证身份<s></s><b></b></dd>
+                    </dl>
+                    <dl class="normal doing">
+                        <dt class="s-num">3</dt>
+                        <dd class="s-text">设置新密码</dd>
+                    </dl>
+                    <dl class="last">
+                        <dt class="s-num">&nbsp;</dt>
+                        <dd class="s-text">完成<s></s><b></b></dd>
+                    </dl>
+                </div>
+
+                <div class="form formno" style="width: 65%;margin-left: 30%;">
+                    <div class="item phone-item" style="display:none">
+                        <span class="label">历史收货人手机号码：</span>
+                        <div class="fl">
+                            <input type="text" tabindex="1" class="itxt" id="mobile">
+                            <label class="blank invisible" id="username_succeed"></label>
+                            <span class="clr"></span>
+                            <label id="mobile_error" class=""></label>
+                        </div>
+                    </div>
+
+                    <div class="item">
+						<span class="label">
+							<img src="../Public/image/icon-quer.png" id="history-name-tip">历史收货人姓名：
+						</span>
+                        <div class="fl">
+                            <input type="text" id="historyName" class="itxt highlight2" tabindex="1">
+                            <span class="clr"></span>
+                            <label class="msg-error" id="historyName_error"></label>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">新登录密码：</span>
+                        <div class="fl">
+                            <input type="password" id="password" class="itxt" tabindex="1" value="">
+                            <input type="hidden" name="eid" id="eid" value="OOKLUNM3AI6V2QNTMWYZRFIUN3SJ7IFANSZHTNIWEKOE5R7G4T2AZT6SZDCSZQGKDKMLXAYWUZ75CPWUPN7ZLIVM6E" class="hide">
+                            <input type="hidden" name="fp" id="fp" value="20fe20219878f42cb9d39ddd445d04d3" class="hide">
+                            <span class="clr"></span>
+                            <div class="u-safe" style="display:none" id="pwdstrength">
+                                安全程度：
+                                <i class="safe-rank06"></i>
+                            </div>
+                            <span class="clr"></span>
+                            <label class="" id="password_error"></label>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">确认新密码：</span>
+                        <div class="fl">
+                            <input type="password" id="repassword" class="itxt" onblur="repasswordBlur();" onfocus="repasswordFocus();" tabindex="2" value="">
+                            <span class="clr"></span>
+                            <label class="" id="repassword_error"></label>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">&nbsp;</span>
+                        <div class="fl">
+                            <a href="javascript:void(0);" class="btn-5" id="resetPwdSubmit" onclick="updatePassword('47c40881e572e071c9a3e7eb7d074006','','true')">提交</a>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+<script src="../Public/js/jquery-1.12.3.min.js"></script>
+
+    <script>
+		var historynamemsg="请输入您已完成订单的收货人姓名";
+		var newpasswordmsg="由字母加数字或符号至少两种以上字符组成的6-20位半角字符，区分大小写。";
+		var newpasswordconfirmmsg="请再次输入新密码";
+		var newpasswordconfirmerrormsg="两次输入的密码不一致，请重新输入";
+		$("#historyName").on("blur focus",function(){
+			var text=$(this).val();
+			var errorObject=$("#historyName_error");
+			if(text.length===0){
+				errorObject.html(historynamemsg);
+			}else{
+				errorObject.html("");
+			}
+		});
+		$("#repassword").on("blur focus",function(){
+			var text=$(this).val();
+			var errorObject=$("#repassword_error");
+			if(text.length===0){
+				errorObject.html(newpasswordconfirmmsg);
+			}else{
+				var passwordText=$("#password").val();
+				if(passwordText!==text){
+					errorObject.html(newpasswordconfirmerrormsg);
+				}else{
+					errorObject.html("");
+				}
+				
+			}
+		});
+		$("#password").on("blur focus",function(){
+			var text=$(this).val();
+			var errorObject=$("#password_error");
+			if(text.length===0){
+				errorObject.html(newpasswordmsg);
+			}else{
+				errorObject.html("");
+			}
+		});
+    </script>
+</body>
+</html>

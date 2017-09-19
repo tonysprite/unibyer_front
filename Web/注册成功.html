@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>首页</title>
+<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+<link href="../Public/css/registered.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header">
+	<div class="title_left">
+		<a class="header_title" href="#">我们的故事</a>
+		<a class="header_title title2" href="#">UNIBALE商城</a>
+		<a class="header_title" href="#">用户评价</a>
+	</div>
+	<div class="title_right">
+		<a class="header_title " href="#">去哪买</a>
+		<a class="header_title" href="#">视频</a>
+		<a class="header_title" href="#">美文分享</a>
+	</div>
+</div>
+	<div class="container">
+		<div class="success_title">
+			恭喜您，注册成功！
+		</div>
+		<div class="success_msg">
+			系统将会在 <span id="second">6</span> 秒后自动跳转。
+		</div>
+		<div class="success_jump_link">
+			<a href="#">不等了直接跳转 >></a>
+		</div>
+		<div class="success_logo">
+			<img src="../Public/image/registered.jpg"/>
+		</div>
+	</div>
+	<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+<script src="../Public/js/jquery-1.12.3.min.js"></script>
+<script src="../Public/js/swiper.jquery.min.js"></script>
+    <script>
+		setInterval(function(){
+			var second=$("#second").html();
+			if(second>0){
+				second--;
+				$("#second").html(second);
+			}else{
+				window.location.href="./优尼拜尔首页副本.html";
+			}
+		},1000);
+    </script>
+</body>
+</html>

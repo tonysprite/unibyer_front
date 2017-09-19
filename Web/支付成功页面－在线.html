@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta charset="GBK">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>购物车-选取登录</title>
+	<link rel="stylesheet" href="../Public/css/swiper.min.css" />
+	<link href="../Public/css/pay_success.css" type="text/css" rel="stylesheet"/>
+	</head>
+<body>
+<!--header start-->
+<div class="header">
+	<div class="header_div">
+		<span class="wecome header_item">送至：
+		<select name="header_province">
+			<option value="北京">北京</option>
+		</select>
+		</span>
+		<span class="header_item logout">haha&nbsp<a href="#">退出</a></span>
+		<span class="header_item">|</span>
+		<a class="header_item">我的订单</a>
+		<a class="header_item">我的优尼拜尔</a>
+		<span class="header_item">购物车<a href="#">0</a>件</span>
+		<span class="header_item">|</span>
+		<a class="header_item">会员俱乐部</a>
+		<a class="header_item header_item_special">客户服务/服务中心</a><span>|&nbsp;</span><a>客户服务/服务中心</a>
+		<a class="header_item">关注优尼拜尔</a>
+		<a class="header_item">网站导航</a>
+	</div>
+</div>
+<!--header end-->
+<!--content start-->
+<div class="container">
+	<div class="pay_title">
+		在线支付
+	</div>
+	<div class="pay_content">
+		感谢您在本店购物！您的订单已支付成功，订单号：2000741，订单金额为<font>￥636.00</font>！</br>
+  感谢您选择乐寿健康！恪守专注糖友健康，为糖友选好产品！做好服务！咨询热线：4006006503
+
+	</div>
+</div>
+<!--content end-->
+		<div class="banner9">
+		<div class="banner9_title">友情连接</div>
+		<div class="banner9_friend_link">
+			<a href="#">中国中纺</a>
+			<a href="#">国贸中心</a>
+			<a href="#" class="center_button">国资委</a>
+			<a href="#">时尚芭莎</a>
+		</div>
+	</div>
+	<div class="header0">
+		<input type="text" name="search_input" class="input" placeholder="通讯地址"/>
+		<input type="button" name="search_btn" value="搜索" class="search_btn"/>
+	</div>
+	<div class="footer">
+		<ul class="link_list">
+			<li><a href="#">我们的故事</a></li>
+			<li><a href="#">UNIBALE商城</a></li>
+			<li><a href="#">用户评价</a></li>
+			<li><a href="#">去哪买</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">美文分享</a></li>
+		</ul>
+		<ul class="introduce">
+			<li><a href="#">联系我们</a></li>
+			<li>&nbsp;</li>
+			<li><a href="#">优你拜尔食品有限公司</a></li>
+			<li><a href="#">UNIBALE FOOD PTY.LTD.</a></li>
+			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
+2000, Australia.</a></li>
+			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
+			<li><a href="#">联系电话：+61 2 9299 7318</br>
+                  +61 2 9299 5318</li>
+		</ul>
+	</div>
+		<script src="../Public/js/jquery-1.12.3.min.js"></script>
+		<script src="../Public/js/swiper.jquery.min.js"></script>
+		<script>
+			$(".plus_num").on("click",function(){
+				var num=$(this).prev("input").val();
+				if(!num){
+					num=0;
+				}
+				num++;
+				console.log(num)
+				$(this).prev("input").val(num);			
+			});
+			$(".reduce_num").on("click",function(){
+				var num=$(this).next("input").val();
+				if(!num){
+					num=0;
+				}
+				num--;
+				if(num<=0){
+					num=0;
+				}
+				console.log(num)
+				$(this).next("input").val(num);			
+			});
+			$("input[name=all]").on('click',function(){
+				var checkedAll=$("input[name=all]:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".select_all").on('click',function(){
+				var checkedAll=$(".select_all:checked").val();
+
+				if(!checkedAll){
+					$("input[name='goods_detail_checkbox']").prop('checked',false);
+					console.log(0);					
+				}else{
+					console.log(1);
+					$("input[name='goods_detail_checkbox']").prop('checked',true);
+				}
+			});
+			$(".favorite_tags span").on("click",function(){
+				$(".favorite_tags span").removeClass("selected_tag");
+				$(this).addClass("selected_tag");
+			});
+
+		var swiper = new Swiper('.swiper-container', {
+			zoom: true,
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		});
+		</script>
+	</body>
+</html>

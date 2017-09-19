@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+.introduce{
+margin-left:500px;
+}
+.introduce>li{
+text-align:left!important;
+}
+.structure_banner_3{
+		background-color:#e5e5e4;
+		padding-top:4em;
+		padding-bottom:4em;
+}
+.structure_banner_3,.structure_banner_4{
+	padding-left:auto;
+}
+.flow_div{
+	margin-bottom:10px;
+	margin-right:30px;
+	border-bottom:1px solid #c8c7c6
+}
+.font_banner_3{
+	font-size:18px;
+	color:#4b4b4b;
+	background:#e5e5e4
+}
+.font_banner4_title{
+	font-size:18px;
+	color:#444444;
+	font-weight:bold;
+}
+.font_banner4_title:hover{
+	color: rgb(2, 126, 179);
+}
+.font_banner4_content{
+	font-size:16px;
+	color:#505050;
+}
+.div_banner4_link{
+	margin-top:16px;
+	
+}
+.font_banner4_link{
+	font-size:12px;
+	color:#93afc2;
+	height:26px;
+	margin-right:3px;
+	width: auto;
+    padding: 5px;
+    background-color: #fff;
+	
+}
+.structure_banner_5{
+    text-align: center;
+	margin-bottom:34px;
+
+}
+.font_page{
+	font-size:14px;
+	color:#070707;
+	border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+	cursor:pointer;
+}
+.font_page:hover{
+	font-size:14px;
+	color:#ffffff;
+	background-color:#9b8f84;
+	
+}
+/*瀑布流层*/
+    .waterfall{
+        -moz-column-count:3; /* Firefox */
+        -webkit-column-count:3; /* Safari 和 Chrome */
+        column-count:3;
+        -moz-column-gap: 1em;
+      -webkit-column-gap: 1em;
+      column-gap: 1em;
+    }
+    /*一个内容层*/
+    .item{
+      margin: 0 0 1em 0;
+      -moz-page-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid;
+
+    }
+    .item img{
+        width: 100%;
+		height:216px;
+		overflow:hidden;
+    }
+	.banner_4_content{
+		padding:22px 15px;
+		background-color:#f1f0ef;
+	}
+	.next_page{
+		cursor:pointer;
+		line-height:28px;
+	}
+	.next_page img{
+		margin-bottom: 2px;
+	}
+	.box{
+		width: 403px;
+		height:216px;
+		overflow:hidden;
+	}
+	.beef_structure{
+		padding-top:3em;
+		background:#f1f0ef;
+	}
+	.beef_structure_content{
+		width:1044px;
+		margin:auto;
+		padding-bottom:40px;
+	}
+	.beef_structure_content_left,.beef_structure_content_right{
+		float:left;
+	}
+	.beef_structure_content_left{
+		width:746px;
+		overflow:hidden;
+	}
+	.beef_structure_content_right{
+		width:260px;
+		margin-left:10px;
+	}
+	.beef_news{
+		width:722px;
+		height:331px;
+		background:#ffffff;
+		padding:22px;
+		margin-bottom:42px;
+		min-width:722px;
+		padding-right: 8px;
+		padding-bottom:0px;
+		padding-left:18px;
+	}
+	.beef_txt_div{
+		
+	}
+	.beef_title{
+		color:#666666;
+		font-size:20px;
+		font-weight:bold;
+		margin-right:32px;
+	}
+	.beef_des{
+		color:#666666;
+		font-size:16px;
+		margin-right:20px;
+	}
+	.beef_img_div{
+		margin-top:10px;
+		width:710px;
+		height:277px;
+		overflow:hidden;
+	}
+	.beef_img_first{
+		margin-right:2px;
+	}
+	.beef_img_first{
+		width:275px;
+		height:277px;
+	}
+	.beef_img_first,.beef_img_content{
+		float:left;
+	}
+	.beef_img_content{
+		width:432px;
+		overflow:hidden;
+	}
+	.right_title,.right_more{
+		color:#666666;	
+		font-weight:bold;
+	}
+	.right_title{
+		font-size:18px;
+	}
+	.right_more{
+		font-size:14px;
+		margin-left:19px;
+	}
+	.right_list_div{
+		margin-top:12px;
+		margin-left:40px;
+	}
+	.right_list_content{
+		padding-top:10px;
+		padding-bottom:10px;
+		background:url(../image/store_home_right_underline.png) repeat-x;
+		background-position:32px 100%;
+		width:255px;
+	}
+	.img11{
+		width: 134px;
+		height: 138px;
+	}
+	.img12{
+		width:290px;
+		height: 138px;
+	}
+	.img13{
+		width:287px;
+		height:132px;
+	}
+	.img14{
+		width:137px;
+		height:133px;
+	}
+	.right_content_title_div{
+		margin-left: 40px;
+	}
+	.list_a_left,.list_a_right{
+		font-size:14px;
+	}
+	.list_a_right{
+		float:right;
+		color:#3c77a0;
+		font-weight:bold;
+	}
+	.right_brand_div{
+		margin-left:40px;
+		margin-top:12px;
+	}
+	
+	.brand_title{
+		margin-top:30px;
+	}
