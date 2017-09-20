@@ -216,6 +216,7 @@ text-align:left!important;
 	}
 	.list_a_left,.list_a_right{
 		font-size:14px;
+		color: #666666;
 	}
 	.list_a_right{
 		float:right;
