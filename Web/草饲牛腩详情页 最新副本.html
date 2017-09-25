@@ -35,7 +35,7 @@
 		<div class="goods_img_div float_left">
 				<div class="preview">
 				<div id="vertical" class="bigImg">
-					<img src="../Public/image/goods_img_1.jpg" width="400" height="400" alt="" id="midimg" />
+					<img src="../Public/image/goods_img_1.jpg" width="350" height="350" alt="" id="midimg" />
 					<div style="display:none;" id="winSelector"></div>
 				</div><!--bigImg end-->	
 				<div class="smallImg">
@@ -74,13 +74,65 @@
 				<div class="goods_span_left">
 					<div class="goods_span_left_title">
 						<span class="price_title">价格</span>
-						<span class="price">价格</span>
+						<span class="price">¥188.00</span>
 					</div>
-					<div class="goods_span_left_desc"></div>
+					<div class="goods_span_left_desc">
+						<span class="goods_span_left_desc_price">¥168.00</span>
+						<span class="goods_span_left_desc_detail">会员专享价    </span>
+					</div>
 				</div>
 				<div class="goods_span_right">
 					<div class="goods_span_right_title">累计评价</div>
 					<div class="goods_span_right_num">400+</div>
+				</div>
+			</div>
+			<div class="goods_express">
+				<div class="goods_express_info">
+					<div class="goods_expess_title">配送至</div>
+					<div class="goods_expess_desc">
+					北京、天津、廊坊按“京东211限时达”标准配送——当日上午10:00前提交的现货订单，
+					当日送达；下午6:00前提交的现货订单，次日15:00前送达。（偏远郊区除外）
+					本品由京东生鲜负责全程冷链送达。
+					</div>
+				</div>
+				<div class="goods_express_info">
+					<div class="goods_expess_title">重量</div>
+					<div class="goods_expess_desc">500g</div>
+				</div>
+				<div class="goods_express_info margin_top_16">
+					<div class="goods_expess_title">选择种类</div>
+					<div class="goods_expess_desc">
+						<div class="float_left goods_item">
+							<img src="../Public/image/goods_img_1.jpg"/>
+							<span class="goods_item_title">澳洲草饲牛腩3000g</span>
+						</div>
+						<div class="float_left goods_item active">
+							<img src="../Public/image/goods_img_1.jpg"/>
+							<span class="goods_item_title">澳洲草饲牛腩3000g</span>
+						</div>
+						<div class="float_left goods_item">
+							<img src="../Public/image/goods_img_1.jpg"/>
+							<span class="goods_item_title">澳洲草饲牛腩3000g</span>
+						</div>
+						<div class="float_left goods_item">
+							<img src="../Public/image/goods_img_1.jpg"/>
+							<span class="goods_item_title">澳洲草饲牛腩3000g</span>
+						</div>
+					</div>
+				</div>
+				<div class="goods_express_info">
+					<div class="goods_expess_title car_input">
+						<div class="input">
+							<input type="text"/>
+						</div>
+						<div class="btn">
+							<div class="plus"><a href="javascript:void(0)">+</a></div>
+							<div class="reduce"><a href="javascript:void(0)">-</a></div>
+						</div>
+					</div>
+					<div class="goods_expess_desc">
+						<input type="button" value="加入购物车" class="car_btn"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -216,6 +268,7 @@
         }
         var $imgLeft = $("#midimg").offset().left; //中图左边距
         var $imgTop = $("#midimg").offset().top; //中图上边距
+		console.log($imgTop);
         X = e.pageX - $imgLeft - $divWidth / 2; //selector顶点坐标 X
         Y = e.pageY - $imgTop - $divHeight / 2; //selector顶点坐标 Y
         X = X < 0 ? 0 : X;
@@ -240,6 +293,10 @@
 
         return { left: X, top: Y };
     }
+});
+$(".goods_item").on("click",function(){
+	$(".goods_item").removeClass("active");
+	$(this).addClass("active");
 });
     </script>
 </body>

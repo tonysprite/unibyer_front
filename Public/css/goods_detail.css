@@ -49,8 +49,8 @@
 #imageMenu li img{width:50px; height:50px;cursor:pointer;}
 #imageMenu li#onlickImg img, #imageMenu li:hover img{ width:46px; height:46px; border:3px solid #959595;}
 /* bigImg */
-.bigImg{position:relative; float:left; width:350px; height:400px; overflow:hidden;}
-.bigImg #midimg{width:350px; height:400px;}
+.bigImg{position:relative; float:left; width:350px; height:350px; overflow:hidden;}
+.bigImg #midimg{width:350px; height:350px;}
 .bigImg #winSelector{width:235px; height:210px;}
 #winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff;}
 /* bigView */
@@ -93,6 +93,7 @@
 }
 .goods_span_left,.goods_span_right{
 	float:left;
+	margin-top:10px;
 }
 .goods_span_left{
 	width:480px;
@@ -101,6 +102,7 @@
 .goods_span_right{
 	border-left:1px solid #e6e4e4;
 	height:32px;
+	padding-left:11px;
 }
 .goods_span_right .goods_span_right_title{
 	font-size:12px;
@@ -115,4 +117,84 @@
 .price{
 	color:#a7776b;
 	font-size:24px;
+}
+.goods_span_left_desc{
+	color:#020202;
+	font-size:16px;
+}
+.goods_span_left_desc_detail{
+	font-size:12px;
+}
+.goods_express{
+	margin:auto;
+	margin-top:43px;
+	width:524px;
+	font-size:12px;
+	color:#000000;
+	line-height:32px;
+	overflow:hidden;
+}
+.goods_express_info{
+	overflow:hidden;
+}
+.goods_expess_title,.goods_expess_desc{
+	float:left;
+}
+.goods_expess_title{	
+	text-align:right;
+	width:72px;
+}
+.goods_expess_desc{
+	width:436px;
+	margin-left: 15px;
+}
+.goods_item{
+	width:203px;
+	height:40px;
+	border:1px solid #cccaca;
+	line-height:36px;
+	margin:0 12px 13px 0;
+	background-color:#f7f7f7;
+	cursor:pointer;
+}
+.goods_item img{
+	vertical-align:middle;
+	width:40px;
+	height:40px;
+}
+.margin_top_16{
+	margin-top:16px;
+}
+.goods_item.active{
+	border:1px solid #a7776b
+}
+.car_btn{
+	color:#ffffff;
+	border:none;
+	width:140px;
+	height:44px;
+	background-color:#a7776b;
+	text-align:center;
+}
+.car_input{
+	text-align:left;
+}
+.car_input .input input{
+	width:32px;
+	text-align:center;
+	height:42px;
+}
+.car_input .input,.car_input .btn{
+	float:left;
+}
+.btn .plus,.btn .reduce{
+	border:1px solid #cccaca;
+	height:22px;
+	line-height:22px;
+	width:15px;
+	text-align:center;
+	
+}
+.btn .plus a,.btn .reduce a{
+	color:#575757
 }
