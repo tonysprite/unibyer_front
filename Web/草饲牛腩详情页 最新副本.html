@@ -526,10 +526,7 @@ $(".goods_item").on("click",function(){
 	$(this).addClass("active");
 });
 
-$(".page_banner_item").on("click",function(){
-	$(".page_banner_item").removeClass("active");
-	$(this).addClass("active");
-});
+
 
 var product = new Swiper('.favorte_list', {
         pagination: '.swiper-pagination',
@@ -561,18 +558,19 @@ var product = new Swiper('.favorte_list', {
 				console.log(num)
 				var num=$("input[name=goods_number]").val(num);	
 			});
-			
+
 			$(".page_banner_item").on('click',function(){
 				var tab_index=$(this).data('val');
 				console.log(tab_index);
+
 				if($(this).hasClass('active')){
 				
 				}else{					
-					
-					$(this).addClass('active');
 					$(".label_page").addClass("hidden");
 					$("#label_page_"+tab_index).removeClass("hidden");
 				}
+				$(".page_banner_item").removeClass("active");
+				$(this).addClass("active");
 			});
     </script>
 </body>
