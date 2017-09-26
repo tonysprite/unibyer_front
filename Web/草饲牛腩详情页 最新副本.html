@@ -120,14 +120,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="goods_express_info">
+				<div class="goods_express_info add_car_div">
 					<div class="goods_expess_title car_input">
 						<div class="input">
-							<input type="text"/>
+							<input type="text"  name="goods_number"/>
 						</div>
 						<div class="btn">
-							<div class="plus"><a href="javascript:void(0)">+</a></div>
-							<div class="reduce"><a href="javascript:void(0)">-</a></div>
+							<div class="plus"><a class="plus_num" href="javascript:void(0)">+</a></div>
+							<div class="reduce"><a class="reduce_num" href="javascript:void(0)">-</a></div>
 						</div>
 					</div>
 					<div class="goods_expess_desc">
@@ -198,6 +198,10 @@
 				<img src="../Public/image/goods_introduce.jpg"/>
 			</div>
 		</div>
+		<div class="label_page hidden" id="label_page_2">1</div>
+		<div class="label_page hidden" id="label_page_3">2</div>
+		<div class="label_page hidden" id="label_page_4">3</div>
+		<div class="label_page hidden" id="label_page_5">4</div>
 	</div>
 	<div class="body">
 		<div class="comment_banner">商品评价</div>
@@ -535,6 +539,41 @@ var product = new Swiper('.favorte_list', {
 		nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });
+	
+	$(".plus_num").on("click",function(){
+				var num=$("input[name=goods_number]").val();
+				if(!num){
+					num=0;
+				}
+				num++;
+				console.log(num)
+				var num=$("input[name=goods_number]").val(num);		
+			});
+			$(".reduce_num").on("click",function(){
+				var num=$("input[name=goods_number]").val();
+				if(!num){
+					num=0;
+				}
+				num--;
+				if(num<=0){
+					num=0;
+				}
+				console.log(num)
+				var num=$("input[name=goods_number]").val(num);	
+			});
+			
+			$(".page_banner_item").on('click',function(){
+				var tab_index=$(this).data('val');
+				console.log(tab_index);
+				if($(this).hasClass('active')){
+				
+				}else{					
+					
+					$(this).addClass('active');
+					$(".label_page").addClass("hidden");
+					$("#label_page_"+tab_index).removeClass("hidden");
+				}
+			});
     </script>
 </body>
 </html>

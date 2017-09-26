@@ -201,6 +201,7 @@
 	color:#575757
 }
 .label_page_banner{
+	margin-top:30px;
 	border-bottom:2px solid #c6a9a2;
 	border-top:1px solid #eeeeee;
 	height:46px;
@@ -363,4 +364,7 @@
 	color:#e70000;
 	font-size:18.79;
 	margin-top:15px;
+}
+.add_car_div{
+	margin-top:7px
 }
