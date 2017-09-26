@@ -241,6 +241,7 @@
 	margin-top:6px;
 	float:right;
 	color:#ffffff;
+	cursor:pointer;
 }
 .label_page{
 	#display:none;
