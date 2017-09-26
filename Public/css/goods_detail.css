@@ -210,7 +210,7 @@
 	color:#000000;
 }
 .label_page_banner_left,.label_page_banner_right,.page_banner_item,.text_div_item,.comment_user_avatar,
-.comment_content,.favorite_banner_title_left{
+.comment_content,.favorite_banner_title_left,.article_img,.article_content{
 	float:left;
 }
 .label_page_banner_left{
@@ -371,4 +371,56 @@
 }
 .hidden{
 	display:none;
+}
+.service_after_sale{
+	margin-top:71px;
+	margin-left:6px;
+	font-size:16.39px;
+}
+.service_after_sale_tips{
+	color:#1d1d1d;
+}
+.service_after_sale_msg{
+	color:#323232;
+	margin-top:22px;
+}
+.service_after_sale_tips span,.service_after_sale_msg span{
+	color:#e4393c
+}
+.margin_bottom_33{
+	margin-bottom:33px;
+}
+.article_list{
+	margin-top:18px;
+}
+.article{
+	height:153px;
+}
+.article_img{
+	width:129px;
+	height:129px;
+	margin:9px 11px 12px 15px;
+	overflow:hidden;
+}
+.article_img img{
+	width:129px;
+	height:129px;
+}
+.article.first{
+	background-color:#dedede
+}
+.article_title{
+	color:#363535;
+	font-size:24px;	
+}
+.article_content{
+	width: 68%;
+	margin-top:10px;
+	cursor:pointer;
+}
+.article_desc{
+	color:#505050;
+	font-size:16px;
+	margin-top:10px;
+	line-height:26px;
 }
