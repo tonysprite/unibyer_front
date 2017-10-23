@@ -8,16 +8,15 @@
 </head>
 <body>
 <div class="header">
-	<div class="title_left">
+
 		<a class="header_title" href="#">我们的故事</a>
 		<a class="header_title title2" href="#">UNIBALE商城</a>
 		<a class="header_title" href="#">用户评价</a>
-	</div>
-	<div class="title_right">
-		<a class="header_title " href="#">去哪买</a>
-		<a class="header_title" href="#">视频</a>
+		<img src="../Public/image/1.log.jpg" />
+		<a class="header_title four" href="#">去哪买</a>
+		<a class="header_title five" href="#">视频</a>
 		<a class="header_title" href="#">美文分享</a>
-	</div>
+
 </div>
  <!-- Swiper -->
     <div class="swiper-container banner1">
@@ -41,7 +40,10 @@
     </div>
 	<div class="banner3">
 		<div class="media">
-			<embed src="http://player.youku.com/player.php/sid/XMjYzMzM1Nzk2MA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" title="Adobe Flash Player">
+			<video class="left" poster="../Public/image/video_default.jpg">
+			   <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/mp4">
+			   您的浏览器不能使用最新的视频播放方式呢
+			</video>
 		</div>
 		<div class="news">
 				<div class="news_title">我们的故事</div>
@@ -117,8 +119,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="swiper-container">
-	<div class="banner6 swiper-wrapper">
+	<div class="banner6 swiper-container">
+	<div class="swiper-wrapper">
 	<div class="swiper-slide">
 		<ul class="banner6_ul">
 			<li><img src="../Public/image/log1.png"/></li>
@@ -179,8 +181,9 @@
 果香浓郁的澳洲西拉是市场的主力产品。</li>
 		</ul>
 		</div>
-		<div class="swiper-pagination"></div>
+		
 	</div>
+	<div class="swiper-pagination"></div>
 	</div>
 
 	<div class="banner7" >
@@ -188,7 +191,10 @@
 	</div>
 	<div class="banner3">
 		<div class="media">
-			<embed src="http://player.youku.com/player.php/sid/XMjYzMzM1Nzk2MA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" title="Adobe Flash Player">
+			<video class="left" poster="../Public/image/banner2_left_video.jpg">
+			   <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/mp4">
+			   您的浏览器不能使用最新的视频播放方式呢
+			</video>
 		</div>
 		<div class="news">
 				<div class="news_title">中央电视台麦卢卡蜂蜜解说词：</div>
@@ -201,7 +207,9 @@
 			</div>			
 		</div>
 	</div>
-	<div class="banner8" style="background:url(../Public/image/austrilia_on_tongue.jpg)no-repeat; background-size:100% 404px;   background-position: 100% 100%"></div>
+	<div class="banner8">
+		<img src="../Public/image/austrilia_on_tongue.jpg" width="100%" height="auto/">
+	</div>
 	<div class="banner9">
 		<div class="banner9_title">友情连接</div>
 		<div class="banner9_friend_link">
@@ -232,25 +240,38 @@
 			<li><a href="#">地址：Level 8, 33 York St, Sydney NSW</br>
 2000, Australia.</a></li>
 			<li><a href="#">电子邮箱：yilongshan@qq.com</a></li>
-			<li><a href="#">联系电话：+61 2 9299 7318</a></br>
-                  +61 2 9299 5318</li>
+			<li><a href="#">联系电话：+61 2 9299 7318</a></li>
+			<li><a href="#" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+61 2 9299 5318</a></li>
 		</ul>
 	</div>
 <script src="../Public/js/jquery-1.12.3.min.js"></script>
 <script src="../Public/js/swiper.jquery.min.js"></script>
     <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.banner1', {
         zoom: true,
+		height:620,
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
     });
 	  var product = new Swiper('.banner6', {
         pagination: '.swiper-pagination',
-        slidesPerView: 3,
+        slidesPerView: 1,
         paginationClickable: true,
-        spaceBetween: 30
     });
+	
+	$("video").addClass('pause');//for check pause or play add a class
+	$('video').click(function() {
+		if ($(this).hasClass('pause')) {
+		$(this).trigger("play");
+		$(this).removeClass('pause');
+		$(this).addClass('play');
+		} else {
+		$(this).trigger("pause");
+		$(this).removeClass('play');
+		$(this).addClass('pause');
+		}
+	})
     </script>
 </body>
 </html>

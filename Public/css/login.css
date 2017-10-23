@@ -28,12 +28,7 @@ src:url(../fonts/方正硬笔行书简体.ttf)
 	min-width:1237px;
 	overflow:hidden;
 }
-.header{
-	background:url(../image/1.log.jpg) no-repeat;
-	background-position:center;
-	line-height:119px;
 
-}
 .banner3{
 	margin-left:200px;
 	overflow:hidden
