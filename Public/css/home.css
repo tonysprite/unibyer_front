@@ -182,8 +182,8 @@ margin-top:39px;
 position:relative;
 z-index:999;
 top:-600px;
-left:65%;
-height:706px
+left:63.2%;
+height:637px
 }
 .banner4_product_list ul>li>img{
 	
@@ -191,13 +191,13 @@ width:83px;
 height:83px;
 }
 .banner5{
-margin-top:-650px;
+margin-top:-640px;
 }
 .banner5_title{
 margin:auto;
 width: 1237px;
 text-align:center;
-margin-top: 10px;
+margin-top: 88px;
 height: auto;
 }
 .banner5_content{
@@ -359,7 +359,7 @@ cursor:pointer;
 	margin-top:28px;
 	font-size:18px;
 	color:#4b4b4b;
-	line-height:30px;
+	line-height:24px;
 }
 .banner4_main_left{
 	width:690px;
@@ -384,4 +384,11 @@ cursor:pointer;
 }
 .footer .main{
 	height:18px;
+}
+.banner3 .news_title{
+		font-size:34px;
+		color:#1a1a1a;
+}
+.banner4_main_left .banner4_product_line{
+	font-size:18px;
 }
