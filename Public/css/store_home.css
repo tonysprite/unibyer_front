@@ -8,8 +8,8 @@ text-align:left!important;
 }
 .structure_banner_3{
 		background-color:#e5e5e4;
-		padding-top:4em;
-		padding-bottom:4em;
+		padding-top:29.5px;
+		padding-bottom:29.5px;
 }
 .structure_banner_3,.structure_banner_4{
 	padding-left:auto;
@@ -109,7 +109,7 @@ text-align:left!important;
 		overflow:hidden;
 	}
 	.beef_structure{
-		padding-top:3em;
+		padding-top:36px;
 		background:#f1f0ef;
 	}
 	.beef_structure_content{
@@ -121,7 +121,7 @@ text-align:left!important;
 		float:left;
 	}
 	.beef_structure_content_left{
-		width:746px;
+		width:747px;
 		overflow:hidden;
 	}
 	.beef_structure_content_right{
@@ -130,28 +130,23 @@ text-align:left!important;
 	}
 	.beef_news{
 		width:722px;
-		height:331px;
 		background:#ffffff;
-		padding:22px;
-		margin-bottom:42px;
+		padding:23px;
+		margin-bottom:40px;
 		min-width:722px;
-		padding-right: 8px;
-		padding-bottom:0px;
-		padding-left:18px;
 	}
 	.beef_txt_div{
 		
 	}
 	.beef_title{
 		color:#666666;
-		font-size:20px;
-		font-weight:bold;
+		font-size:18px;
 		margin-right:32px;
 	}
 	.beef_des{
 		color:#666666;
 		font-size:16px;
-		margin-right:20px;
+		margin-right:46px;
 	}
 	.beef_img_div{
 		margin-top:10px;
@@ -164,7 +159,10 @@ text-align:left!important;
 	}
 	.beef_img_first{
 		width:275px;
-		height:277px;
+		height:275px;
+	}
+	.beef_img_first img{
+		height:inherit;
 	}
 	.beef_img_first,.beef_img_content{
 		float:left;
@@ -186,7 +184,7 @@ text-align:left!important;
 	}
 	.right_list_div{
 		margin-top:12px;
-		margin-left:40px;
+		margin-left:30px;
 	}
 	.right_list_content{
 		padding-top:10px;
@@ -196,23 +194,23 @@ text-align:left!important;
 		width:255px;
 	}
 	.img11{
-		width: 134px;
-		height: 138px;
+		width: 208px;
+		height: 137px;
 	}
 	.img12{
-		width:290px;
-		height: 138px;
+		width: 218px;
+		height: 137px;
 	}
 	.img13{
-		width:287px;
-		height:132px;
+		width: 208px;
+		height: 137px;
 	}
 	.img14{
-		width:137px;
-		height:133px;
+		width: 218px;
+		height: 137px;
 	}
 	.right_content_title_div{
-		margin-left: 40px;
+		margin-left: 30px;
 	}
 	.list_a_left,.list_a_right{
 		font-size:14px;
@@ -230,4 +228,18 @@ text-align:left!important;
 	
 	.brand_title{
 		margin-top:30px;
+	}
+	.main{
+		width:1045px;
+	}
+	.structure_banner_3 .main{
+		line-height:53px;
+		font-size:24px;
+		color:#2d2c2c;
+	}
+	.beef_news:last-child{
+		margin-bottom:93px;
+	}
+	.beef_title.special{
+		margin-right:9px;
 	}

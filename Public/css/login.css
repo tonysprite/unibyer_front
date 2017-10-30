@@ -1,34 +1,3 @@
-@charset "utf-8";
-body{
-	margin:0;
-	padding:0;
-	min-width:1237px;
-	overflow-x:hidden;
-}
-.body {
-	background:#FFF;
-	font-size:14px;
-	padding:0 0 0 0;
-	width:1237px;
-	margin:auto;
-	border:0px;
-	font-family: 'Microsoft YaHei', 微软雅黑, arial;
-	overflow-x:hidden;
-}
-@font-face
-{
-font-family: myFirstFont;
-src:url(../fonts/FZNBSJW.TTF);
-font-family: font-fzybjt;
-src:url(../fonts/方正硬笔行书简体.ttf)
-}
-
-.header,.banner3,.banner4_main{
-	width:inherit;
-	min-width:1237px;
-	overflow:hidden;
-}
-
 .banner3{
 	margin-left:200px;
 	overflow:hidden
@@ -256,48 +225,6 @@ text-decoration:none;
 font-size:22px;
 }
 
-.header0{
-background:#9b8f84;
-height:110px;
-text-align:right;
-padding-right:20px;
-}
-.header0 input,.header0 btn{
-position:relative;
-width:314px;
-top:30px;
-left:0%;
-height:43px;
-line-height:40px;
-}
-.header0 .search_btn{
-	height: 48px;
-    background: #cdcdcd;
-    font-size: 16px;
-    color: #424141;
-    font-weight: bold;
-    margin-left: -10px;
-    width: 95px;
-    line-height: 37px;
-}
-.footer{
-margin-top:40px;
-}
-
-.footer ul li{
-font-size:14px;
-}
-a{
-text-decoration:none;
-}
-.footer .link_list>li{
-float:left;
-margin-right:25px;
-padding-left:15px
-}
-.footer li *{
-color:#969595
-}
 .introduce{
 float:right;
 margin-right:20px;

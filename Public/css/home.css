@@ -24,7 +24,7 @@ src:url(../fonts/FZXH1JW.ttf)
 }
 
 *{
-	font-family: font-fzybjt;
+	font-family:font-fzybjt;
 }
 .header,.banner3,.banner4_main{
 	width:inherit;
@@ -90,7 +90,7 @@ margin-top:70px;
 min-height:386px;
 }
 .swiper-container.banner1{margin-top:18px;}
-
+.banner1{margin-top:18px;}
 .detail a{
 color:#0064a4;
 font-size:22px;
