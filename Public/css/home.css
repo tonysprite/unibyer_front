@@ -144,7 +144,7 @@ min-height:537px;
 }
 .banner4_main{
     margin: auto;
-    padding-top: 50px;
+    padding-top:67px;
     height: 537px;
     width: 1245px;
 }
@@ -201,11 +201,13 @@ margin-top: 88px;
 height: auto;
 }
 .banner5_content{
-color: #505050;
+color: #070707;
 width:1254px;
 margin:auto;
 margin-top:20px;
 text-align: left;
+font-size:18px;
+line-height:30px;
 }
 ul .product_title{
 color:#6b6b6b;
@@ -293,30 +295,30 @@ font-size:22px;
 
 .header0{
 background:#9b8f84;
-height:110px;
-text-align:right;
-padding-right:14%;
+height:118px;
 }
-.header0 input,.header0 btn{
-position:relative;
-width:314px;
-top:30px;
-left:0%;
-height:43px;
-line-height:40px;
+.header0 input{
+width:302px;
+padding-left:12px;
+height: 40px;
+float:right;
+margin-top:40px;
+border:none;
 }
 .header0 .search_btn{
-	height: 48px;
+	height: 42px;
     background: #cdcdcd;
     font-size: 16px;
     color: #424141;
-    font-weight: bold;
-    margin-left: -10px;
     width: 95px;
-    line-height: 37px;
+    line-height: 42px;
+	text-align:center;
+	cursor:pointer;
+	float:right;
+	margin-top:40px
 }
 .footer{
-padding-top:40px;
+padding-top:50px;
 height:218px;
 text-align:left;
 }
@@ -368,6 +370,7 @@ cursor:pointer;
 	font-size:34px;
 	color:#1a1a1a;
 	width: 614px;
+	height:34px;
 }
 .banner3.new .news{
 	overflow:hidden;
@@ -391,4 +394,12 @@ cursor:pointer;
 }
 .banner4_main_left .banner4_product_line{
 	font-size:18px;
+}
+.banner6.swiper-container{
+	margin-top:30px;
+}
+.footer .link_list{
+	margin-top: 0px;
+	margin-bottom:0px;
+    height: 14px;
 }
