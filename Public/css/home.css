@@ -7,10 +7,7 @@ body{
 }
 @font-face
 {
-font-family: myFirstFont;
-src:url(../fonts/FZNBSJW.TTF);
-font-family: font-fzybjt;
-src:url(../fonts/FZXH1JW.ttf)
+font-family: "Microsoft YaHei"
 }
 .body {
 	background:#FFF;
@@ -19,12 +16,12 @@ src:url(../fonts/FZXH1JW.ttf)
 	width:1237px;
 	margin:auto;
 	border:0px;
-	font-family: font-fzybjt;
+	font-family: "Microsoft YaHei";
 	overflow-x:hidden;
 }
 
 *{
-	font-family:font-fzybjt;
+	font-family:"Microsoft YaHei"
 }
 .header,.banner3,.banner4_main{
 	width:inherit;
@@ -366,12 +363,12 @@ cursor:pointer;
 .banner4_main_left{
 	width:690px;
 }
-.banner3.new .news_title{
-	font-size:34px;
-	color:#1a1a1a;
-	width: 614px;
-	height:34px;
-	overflow-x:hidden;
+.banner3.new .news_title {
+    font-size: 34px;
+    color: #1a1a1a;
+    width: 652px;
+    height: 42px;
+    overflow-x: hidden;
 }
 .banner3.new .news{
 	overflow:hidden;

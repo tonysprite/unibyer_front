@@ -173,7 +173,6 @@ text-align:left!important;
 	}
 	.right_title,.right_more{
 		color:#666666;	
-		font-weight:bold;
 	}
 	.right_title{
 		font-size:18px;
@@ -222,7 +221,7 @@ text-align:left!important;
 		font-weight:bold;
 	}
 	.right_brand_div{
-		margin-left:40px;
+		margin-left:30px;
 		margin-top:12px;
 	}
 	
