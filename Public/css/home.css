@@ -7,7 +7,8 @@ body{
 }
 @font-face
 {
-font-family: "Microsoft YaHei"
+font-family: fzybjt;
+src:url(../fonts/FZXH1JW.TTF)
 }
 .body {
 	background:#FFF;
@@ -16,12 +17,12 @@ font-family: "Microsoft YaHei"
 	width:1254px;
 	margin:auto;
 	border:0px;
-	font-family: "Microsoft YaHei";
+	font-family: fzybjt;
 	overflow-x:hidden;
 }
 
 *{
-	font-family:"Microsoft YaHei"
+	font-family:fzybjt
 }
 .header,.banner3,.banner4_main{
 	width:inherit;
@@ -284,6 +285,8 @@ color:#929392;
 .banner9_friend_link{
 margin-top:22px;
 margin-bottom:44px;
+width: 1254px;
+margin-left: auto;
 }
 .banner9_friend_link a{
 margin-right:121px;
