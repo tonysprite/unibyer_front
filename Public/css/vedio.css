@@ -15,12 +15,14 @@
 }
 .banner1_desc_div{
 	background-color:#f1f0ef;
-	padding-top:50px;
-	height:225px;
+	height:174px;
+	font-size:18px;
+	color:#4b4b4b;
+	padding-top:57px;
 }
 .desc_inner_div{
 	
-	width:1103px;
+	width:1237px;
 	margin:auto;
 }
 .news{
@@ -103,3 +105,176 @@
 .banner3.last{
 	margin-bottom:250px
 }
+.banner4_time_div{
+	text-align:right;
+}
+.banner4_time_div span{
+	display:inline-block;
+	background-color:#c0bebe;
+	width:37px;
+	height:19px;
+	border-radius:1px;
+	color:#ffffff;
+	font-size:12px;
+	text-align: center;
+    line-height: 19px;
+	margin-right:32px;
+	margin-bottom:10px;
+}
+@charset "utf-8";
+
+.introduce{
+margin-left:500px;
+}
+.introduce>li{
+text-align:left!important;
+}
+.structure_banner_3{
+		background-color:#f1f0ef;
+		padding-top:70px;
+		padding-bottom:43px;
+}
+.structure_banner_3,.structure_banner_4{
+	padding-left:auto;
+}
+.structure_banner_4{
+	margin-top:40px;
+}
+.flow_div{
+	margin-bottom:10px;
+	margin-right:30px;
+	border-bottom:1px solid #c8c7c6
+}
+.font_banner_3{
+	font-size:18px;
+	color:#4b4b4b;
+	background:#f1f0ef
+}
+.font_banner4_title{
+	font-size:18px;
+	color:#1c1c1c;
+	font-weight:bold;
+}
+.font_banner4_title:hover{
+	color: rgb(2, 126, 179);
+}
+.font_banner4_content{
+	font-size:16px;
+	color:#505050;
+	line-height:26px;
+	margin-top:22px;
+}
+.div_banner4_link{
+	margin-top:16px;
+	
+}
+.font_banner4_link{
+	font-size:12px;
+	color:#93afc2;
+	height:26px;
+	margin-right:3px;
+	width: auto;
+    padding: 5px;
+    background-color: #fff;
+	
+}
+.structure_banner_5{
+    text-align: center;
+	margin-bottom:34px;
+
+}
+.font_page{
+	font-size:14px;
+	color:#070707;
+	border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+	cursor:pointer;
+}
+.font_page:hover{
+	font-size:14px;
+	color:#ffffff;
+	background-color:#9b8f84;
+	
+}
+/*瀑布流层*/
+    .waterfall{
+        -moz-column-count:3; /* Firefox */
+        -webkit-column-count:3; /* Safari 和 Chrome */
+        column-count:3;
+        -moz-column-gap: 30px;
+      -webkit-column-gap: 30px;
+		column-gap:30px;
+	  padding-bottom:122px;
+	      -webkit-column-width: 393px;
+       -moz-column-width: 393px;
+            column-width: 393px;
+    }
+    /*一个内容层*/
+    .item{
+	  width:393px;
+	  height:auto;
+	  margin-bottom:58px;
+	    display: inline-block;
+    }
+    .box video{
+        width: 100%;
+		height:100%;
+		overflow:hidden;
+    }
+	.banner_4_content{
+		width:393px;
+		background-color:#f1f0ef;
+	}
+	.next_page{
+		cursor:pointer;
+		line-height:28px;
+	}
+	.next_page img{
+		margin-bottom: 2px;
+	}
+	.box{
+		width: inherit;
+
+		overflow:hidden;
+	}
+	.body{
+		width:1260px;
+	}
+	.price_span{
+		font-size:18px;
+		color:#e10800;
+	}
+	.click_detail_div,.price_div{
+		width:180px;
+		float:left;
+	}
+	.click_detail_div{
+		background: url(../image/document_share2_heart.jpg) no-repeat;
+		padding-left: 30px;
+	}
+	.price_div{
+		text-align:right;
+		padding-right:10px;
+	}
+	.banner4_price_title{
+		width:400px;
+		line-height:22px;
+		margin-bottom:60px;
+	}
+	.banner_4_content{
+		  border-bottom: 1px solid #c8c7c6;
+	}
+	.goods_tag{
+		font-size:12px;
+		color:#93afc2;
+		padding:8px;
+		background-color:#ffffff;
+	}
+	.banner_4_content_inner{
+		    padding: 25px 8px 9px 16px;
+	}
+	.box img{
+		auto
+	}
