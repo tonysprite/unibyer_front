@@ -242,3 +242,7 @@ text-align:left!important;
 	.beef_title.special{
 		margin-right:9px;
 	}
+	.beef_img_down,.beef_img_up{
+		width:450px;
+		overflow:hidden;
+	}
