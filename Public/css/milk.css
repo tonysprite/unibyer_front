@@ -18,16 +18,18 @@
 	height:135px;
 }
 .desc_inner_div{
-	
+	font-size:18px;
 	width:1213px;
 	margin:auto;
 }
 .news{
-	margin-top: 85px;
+	
 	margin-left: 45px;
 }
-.news_title{
-	color: 1a1a1a;
+.news .news_title{
+	margin-top: 36px;
+	color: #2f2e2e;
+	height:78px;
 }
 .banner3 .left{
 	margin-left:0px;
@@ -60,9 +62,13 @@
 }
 .detail .price{
 	font-size:18px;
-	color:#e10800;
-	float:right;
-	line-height: 70px;
+	color:#ffffff;
+	float:right;	
+	width:132px;
+	height:37px;
+	line-height:37px;
+	background-color:#ff2121;
+	text-align:center;
 }
 .structure_banner_5 {
     text-align: center;
@@ -81,4 +87,19 @@
     font-size: 14px;
     color: #ffffff;
     background-color: #9b8f84;
+}
+.news_content{
+	color:#6b6b6b;
+	font-size:18px;
+	margin-top:0px;
+	height:230px;
+}
+.banner3 .left,.banner3 .right{
+	height:383px;
+}
+.media{
+	height:inherit;
+}
+.news_content_row{
+	line-height:31px
 }
